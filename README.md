@@ -6,7 +6,7 @@ information, session titles, recording URLs, and social media links.
 
 ## Overview
 
-This project fetches data from the DevBCN conference's Sessionize API endpoints
+This project fetches data from the DevBcn conference's Sessionize API endpoints
 and processes it to create a comprehensive CSV file containing information about
 speakers, their sessions, recording URLs, and social media profiles. The tool is
 designed to be robust, handling various error scenarios gracefully.
@@ -25,7 +25,7 @@ designed to be robust, handling various error scenarios gracefully.
 ### Prerequisites
 
 - Python 3.11 or higher
-- pip or uv package manager
+- uv package manager
 
 ### Setup
 
@@ -37,11 +37,6 @@ designed to be robust, handling various error scenarios gracefully.
 
 2. Install dependencies:
    ```bash
-   pip install -e .
-   ```
-
-   Or if you're using uv:
-   ```bash
    uv pip install -e .
    ```
 
@@ -50,7 +45,7 @@ designed to be robust, handling various error scenarios gracefully.
 Run the script to generate the CSV file:
 
 ```bash
-python process_speakers.py
+uv run process_speakers.py
 ```
 
 By default, this will create a file named `devbcn-speakers.csv` in the current
@@ -85,7 +80,7 @@ The generated CSV file contains the following columns:
 Run the tests to ensure everything is working correctly:
 
 ```bash
-python -m unittest discover tests
+uv run -m unittest discover tests
 ```
 
 ## Dependencies
